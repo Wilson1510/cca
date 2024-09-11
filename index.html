@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafalan Pertanyaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            margin: 0 auto;
+            width: 50%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .samuel{background-color: #4CAF50;}
+        .lukas{background-color: #4e4caf;}
+        .urut{background-color: chocolate;}
+        button:hover {
+            background-color: #000000;
+        }
+        #answer {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hafalan Pertanyaan</h1>
+        <h2 id="keterangan"></h2>
+        <div id="question" style="font-size: 20px; margin-bottom: 20px;">Klik tombol untuk memulai!</div>
+        <button class="samuel" onclick="jawabsamuel()">Jawab samuel</button>
+        <button class="urut" onclick="urutsamuel()">Urut samuel</button>
+        <button class="samuel" onclick="samuel()">1 Samuel</button>
+        <button class="lukas" onclick="jawablukas()">Jawab lukas</button>
+        <button class="urut" onclick="urutlukas()">Urut lukas</button>
+        <button class="lukas" onclick="lukas()">Lukas</button>
+        
+        
+        <div id="answer"></div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
